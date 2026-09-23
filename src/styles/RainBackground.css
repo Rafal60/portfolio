@@ -1,0 +1,42 @@
+.rain {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  overflow: hidden;
+}
+ 
+.rain__layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+ 
+.rain__drop {
+  position: absolute;
+  top: -40px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(200, 210, 255, 0.75));
+  animation-name: rain-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+ 
+@keyframes rain-fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500vh);
+  }
+}
+ 
+.rain__content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

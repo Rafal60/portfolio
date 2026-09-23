@@ -1,0 +1,52 @@
+
+/* Rangée de box, une par moyen de contact */
+.contact-glass-panel-row {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1.5rem;
+}
+
+.contact-glass-panel-box {
+  flex: 1 1 14rem;
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-glass-panel-box:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-glass-panel-box-title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #e4d9b8;
+}
+
+.contact-glass-panel-box-value {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d7d8db;
+  word-break: break-word;
+}
+
+@media (min-width: 640px) {
+  .contact-glass-panel {
+    padding: 4rem 3rem;
+  }
+}
