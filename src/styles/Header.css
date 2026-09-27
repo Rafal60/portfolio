@@ -1,40 +1,92 @@
 header {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 10rem 1.5rem 3rem;
-    text-align: center;
-    background: linear-gradient(rgba(30, 30, 30, 1) 0%, rgba(60, 60, 60, 1) 100%);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 10rem 1.5rem 3rem;
+  text-align: center;
+  background: linear-gradient(rgba(30, 30, 30, 1) 0%, rgba(60, 60, 60, 1) 100%);
 }
-.header-name{
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 6rem;
-    line-height: 1.1;
-    margin: 0;
-    background: linear-gradient(160deg, #f3d98b 0%, #d4af37 55%, #b8892f 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 18px rgba(212, 175, 55, 0.25);
+ 
+.header-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 6rem;
+  line-height: 1.1;
+  margin: 0;
+  background: linear-gradient(160deg, #f3d98b 0%, #d4af37 55%, #b8892f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 18px rgba(212, 175, 55, 0.25);
 }
-
+ 
 .header-role {
-    margin: 0.25rem 0 0;
-    font-size: 2.5rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #e4d9b8;
+  margin: 0.25rem 0 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e4d9b8;
 }
-
+ 
 .header-about {
-    margin: 1.5rem 0 0;
-    max-width: 42rem;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    color: #d7d8db;
+  margin: 1.5rem 0 0;
+  max-width: 42rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #d7d8db;
+}
+ 
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  header {
+    padding: 7rem 1.5rem 3rem;
+    gap: 1.5rem;
+  }
+ 
+  .header-name {
+    font-size: 4.25rem;
+  }
+ 
+  .header-role {
+    font-size: 1.75rem;
+  }
+ 
+  .header-about {
+    font-size: 1.05rem;
+  }
+}
+ 
+@media (max-width: 640px) {
+  header {
+    padding: 6rem 1.25rem 2.5rem;
+    gap: 1.25rem;
+  }
+ 
+  .header-name {
+    font-size: 2.75rem;
+  }
+ 
+  .header-role {
+    font-size: 1.25rem;
+  }
+ 
+  .header-about {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+ 
+@media (max-width: 400px) {
+  .header-name {
+    font-size: 2.1rem;
+  }
+ 
+  .header-role {
+    font-size: 1.05rem;
+  }
 }
 
