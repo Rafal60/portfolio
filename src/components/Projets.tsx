@@ -16,9 +16,9 @@ const defaultProjects: Project[] = [
   { title: "App météo", description: "Application Flutter de prévision météo utilisant l'API OpenWeatherMap, avec un système de recherche, une gestion des favoris ", image: "img/App-Meteo.png", href: "https://github.com/Rafal60/App-Meteo" },
   { title: "Forum", description: "Forum en ligne, avec gestion des utilisateurs et connexion à une base de données. Réalisé en Go, HTML et CSS, utilisant SQLite pour la gestion des données.", image: "img/Forum-go.png", href: "https://github.com/Alkaniel/go-forum" },
   { title: "Game Jam", description: "Jeu platformeur à énigmes réalisé avec Godot dans le cadre d'un Game Jam", image: "img/Godot-Game.png", href: "https://github.com/Rafal60/Dying-Knight" },
-  { title: "E-Commmerce PHP", description: "Courte description : le problème résolu, votre rôle et le résultat obtenu.", image: "img/projet-4.png", href: "https://github.com/Fox-Programs/E-commerce-php" },
-  { title: "Campus Companion", description: "Courte description : le problème résolu, votre rôle et le résultat obtenu.", image: "img/projet-5.png", href: "https://github.com/lazlodev/campuscompanion" },
-  { title: "Projet Fil Rouge", description: "Courte description : le problème résolu, votre rôle et le résultat obtenu.", image: "img/tower-defence.png", href: "https://github.com/Rafal60/Tower-defence_Fil-rouge" },
+  { title: "E-Commmerce PHP", description: "Projet qui vise à comprendre et à maîtriser le php. Le but est de concevoir un site web sous forme d'un site de E-Commerce avec base de données, gestion de comptes, gestions des articles, API.", image: "img/projet-4.png", href: "https://github.com/Fox-Programs/E-commerce-php" },
+  { title: "Campus Companion", description: "IA sous forme d’application mobile pour le campus Ynov capable de répondre à des questions à propos du campus tirées de fichiers donnés", image: "img/projet-5.png", href: "https://github.com/lazlodev/campuscompanion" },
+  { title: "Projet Fil Rouge", description: "Projet de Tower Defense multijoueur en temps réel basée sur une architecture client-serveur synchronisée par WebSockets.", image: "img/tower-defence.png", href: "https://github.com/Rafal60/Tower-defence_Fil-rouge" },
 ];
 
 export function Projets({projects = defaultProjects }: ProjetsProps) {

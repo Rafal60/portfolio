@@ -15,7 +15,7 @@ export interface CompetencesProps {
 const defaultSkillGroups: SkillGroup[] = [
   { category: "Langages", items: ["JavaScript", "TypeScript", "Python", "HTML / CSS", "PHP", "C++"] },
   { category: "Frameworks & outils", items: ["React", "Node.js", "Laravel", "Tailwind CSS"] },
-  { category: "Autres", items: ["Travail en équipe", "Gestion de projet", "Anglais courant"] },
+  { category: "Autres", items: ["Anglais courant","Travail en équipe", "Gestion de projet","Autonomie","Adaptabilité"  ] },
 ];
  
 export function Competences({skillGroups = defaultSkillGroups,}: CompetencesProps) {
